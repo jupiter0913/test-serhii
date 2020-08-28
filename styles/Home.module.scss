@@ -120,13 +120,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  transition: height 0.5s;
   &:hover {
+    animation-name: example;
+    animation-duration: 1s;
     border: solid 2px transparent;
     border-image-source: linear-gradient(45deg, #00D5B4, #FF5C4D, #001B5D);
     border-image-slice: 1;
-    height: 420px;
   }
+}
+@keyframes example {
+  0%   {top:0px;}
+  100% {top:-20px;}
 }
 .cardContent {
   display: block;
