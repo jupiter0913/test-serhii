@@ -102,6 +102,22 @@
   bottom: 0px;
   right: 0px;
 }
+@media (max-width: 600px) {
+  .backgroundImage01 {
+    display: none;
+  }
+  .backgroundImage02 {
+    display: none;
+  }
+  .backgroundImage03 {
+    display: none;
+  }
+}
+.backgroundImage .backgroundImage04 {
+  width: 150px;
+  height: 150px;
+  background:#ffffff url('/Assets/Formes/demi-arrondi/saumon/4 copy.png') no-repeat top 90px right 90px;
+}
 
 .cardArea {
   width: 100%;
@@ -109,7 +125,6 @@
   flex-wrap: wrap; 
 }
 .card {
-  height: 400px;
   position: relative;
   margin: 20px;
   padding: 10px;
@@ -120,21 +135,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: all 0.3s linear;
+  top: 0px;
   &:hover {
-    animation-name: example;
-    animation-duration: 1s;
     border: solid 2px transparent;
     border-image-source: linear-gradient(45deg, #00D5B4, #FF5C4D, #001B5D);
     border-image-slice: 1;
+    top: -20px;
   }
-}
-@keyframes example {
-  0%   {top:0px;}
-  100% {top:-20px;}
 }
 .cardContent {
   display: block;
   text-align: center;
+  padding: 30px 20px 50px 20px;
 }
 .subTitle {
   font-size: 24px;
@@ -144,5 +157,21 @@
 .text {
   font-size: 18px;
   color: #001a5c;
+  margin-bottom: 50px;
+}
+.buttonStyle {
+  border: solid 2px #a5abb7;
+  border-radius: 10px;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #001a5c;
+  &:hover {
+    border: solid 2px #ff5e4d;
+    background-color: #ff5e4d;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+  }
 }
 
