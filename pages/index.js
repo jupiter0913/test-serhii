@@ -26,8 +26,8 @@ export default function Home() {
           <img src='/Assets/Formes/angle-arrondi/saumon/4.png' className={styles.backgroundImage02} />
           <img src='/Assets/Formes/illustration/vert-mini.png' className={styles.backgroundImage03} />
           <Container fluid className={styles.cardArea}>
-            <Row className={styles.cardArea}>
-              <Col xs={3}>
+            <Row>
+              <Col>
                 <div className={styles.card}>
                   <div className={styles.cardContent}>
                     <img src='/Assets/images/cloud.png' alt="cloud" />
@@ -39,7 +39,7 @@ export default function Home() {
                   </div>
                 </div>
               </Col>
-              <Col xs={3}>
+              <Col>
                 <div className={styles.card}>
                   <div className={styles.cardContent}>
                     <img src='/Assets/images/modern-workplace.png' alt="cloud" />
@@ -51,7 +51,7 @@ export default function Home() {
                   </div>
                 </div>
               </Col>
-              <Col xs={3}>
+              <Col>
                 <div className={styles.card}>
                   <div className={styles.cardContent}>
                     <img src='/Assets/images/sécurité.png' alt="cloud" />
@@ -63,7 +63,7 @@ export default function Home() {
                   </div>
                 </div>
               </Col>
-              <Col xs={3}>
+              <Col>
                 <div className={styles.card}>
                   <div className={styles.cardContent}>
                     <img src='/Assets/images/service-managé.png' alt="cloud" />
